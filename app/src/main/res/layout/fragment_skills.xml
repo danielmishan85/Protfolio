@@ -11,152 +11,191 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/amatica_sc_bold"
-        android:text="SKILLS"
+        android:text="MY SKILLS"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/outLinear"
-        android:layout_width="400dp"
-        android:layout_height="500dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintDimensionRatio="1:1"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <LinearLayout
-            android:id="@+id/inLinear1"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/btn00"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:src="@drawable/c"
-                android:textSize="60sp" />
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/btn01"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/cpp"
-                android:textSize="60sp" />
+                <ImageButton
+                    android:id="@+id/btn00"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/c"
+                    android:textSize="60sp" />
 
-            <ImageButton
-                android:id="@+id/btn02"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                <ImageButton
+                    android:id="@+id/btn01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/cpp"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/java"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:src="@drawable/java"
-                android:textSize="60sp" />
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/html5"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/css3"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/js"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/bootstrap"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/reactjs"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/nodejs"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/mongodb"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn24"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/git"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/linux"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/github"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn27"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/python"
+                    android:textSize="60sp" />
+
+                <ImageButton
+                    android:id="@+id/btn28"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/firebase"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+
         </LinearLayout>
+    </ScrollView>
 
-        <LinearLayout
-            android:id="@+id/inLinear2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/btn10"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/html5"
-                android:textSize="60sp" />
 
-            <ImageButton
-                android:id="@+id/btn11"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/css3"
-                android:textSize="60sp" />
 
-            <ImageButton
-                android:id="@+id/btn12"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/js"
-                android:textSize="60sp" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/inLinear3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/btn20"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/bootstrap"
-                android:textSize="60sp" />
-
-            <ImageButton
-                android:id="@+id/btn21"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/reactjs"
-                android:textSize="60sp" />
-
-            <ImageButton
-                android:id="@+id/btn22"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/nodejs"
-                android:textSize="60sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/inLinear4"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/btn23"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/mongodb"
-                android:textSize="60sp" />
-
-            <ImageButton
-                android:id="@+id/btn24"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/git"
-                android:textSize="60sp" />
-
-            <ImageButton
-                android:id="@+id/btn25"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/linux"
-                android:textSize="60sp" />
-        </LinearLayout>
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
