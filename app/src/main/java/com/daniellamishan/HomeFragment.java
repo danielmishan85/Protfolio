@@ -1,4 +1,4 @@
-package com.example.daniellamishan;
+package com.daniellamishan;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import androidx.fragment.app.Fragment;
+
+import com.daniellamishan.R;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

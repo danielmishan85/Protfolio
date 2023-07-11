@@ -1,4 +1,4 @@
-package com.example.daniellamishan;
+package com.daniellamishan;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -18,8 +18,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import com.example.daniellamishan.model.Model;
-import com.example.daniellamishan.model.Project;
+import com.daniellamishan.model.Model;
+import com.daniellamishan.R;
+import com.daniellamishan.model.Project;
 
 import java.util.List;
 

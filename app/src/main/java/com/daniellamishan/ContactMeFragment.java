@@ -1,4 +1,4 @@
-package com.example.daniellamishan;
+package com.daniellamishan;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -20,6 +20,7 @@ import android.widget.Toast;
 import android.Manifest;
 import android.content.pm.PackageManager;
 
+import com.daniellamishan.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.concurrent.ExecutorService;

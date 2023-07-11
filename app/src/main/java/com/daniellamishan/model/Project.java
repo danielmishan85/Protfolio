@@ -1,4 +1,4 @@
-package com.example.daniellamishan.model;
+package com.daniellamishan.model;
 
 public class Project {
 

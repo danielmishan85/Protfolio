@@ -1,4 +1,4 @@
-package com.example.daniellamishan;
+package com.daniellamishan;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.daniellamishan.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class AboutMeFragment extends Fragment {
