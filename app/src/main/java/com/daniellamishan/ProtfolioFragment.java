@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.StrictMode;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,10 @@ public class ProtfolioFragment extends Fragment {
         projectsList.setLayoutManager(new LinearLayoutManager(getContext())); //define the recycler view to be a list
         ProtfolioRecyclerAdapter adapter = new ProtfolioRecyclerAdapter(getLayoutInflater(),protfolio);
         projectsList.setAdapter(adapter);
+
+        adapter.setOnItemClickListener((int pos) -> {
+            Log.d("TAG", "Row was clicked " + pos);
+        });
 
         return view;
     }
@@ -129,7 +134,6 @@ public class ProtfolioFragment extends Fragment {
         @Override
         public void onBindViewHolder(@NonNull ProtfolioViewHolder holder, int position) {
             Project project = data.get(position);
-            //Log.d("server", "dishName: " + dish.getDishName());
             holder.bind(project);
         }
 

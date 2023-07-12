@@ -57,6 +57,11 @@ public class ContactMeFragment extends Fragment {
 
                             sendSMS();
 
+                            name.setText("");
+                            email.setText("");
+                            message.setText("");
+                            Toast.makeText(getContext(), "Message Sent!", Toast.LENGTH_SHORT).show();
+
                     } else {
                         requestPermissions(new String[]{Manifest.permission.SEND_SMS}, 1);
                     }
@@ -101,7 +106,7 @@ public class ContactMeFragment extends Fragment {
         String SMS = "name: " + name.getText().toString().trim() + "\n"
                 + "email: " + email.getText().toString().trim() + "\n"
                 + message.getText().toString().trim() + "\n"
-                + "SENT FROM MY PROTFOLIO";
+                + "***SENT FROM MY PROTFOLIO***";
         Log.d("tag", SMS);
 
         SmsManager smsManager = SmsManager.getDefault();
